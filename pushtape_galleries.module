@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pushtape_galleries feature.
+ */
+
+include_once 'pushtape_galleries.features.inc';
