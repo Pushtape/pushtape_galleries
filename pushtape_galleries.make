@@ -14,3 +14,9 @@ projects[media_gallery][patch][] = http://drupal.org/files/media_gallery-1391332
 projects[media][version] = 2.x-dev
 projects[media][type] = module
 projects[media][subdir] = contrib
+
+projects[plupload][version] = 1.0
+projects[plupload][subdir] = contrib
+
+libraries[plupload][download][type] = get
+libraries[plupload][download][url] = https://github.com/downloads/moxiecode/plupload/plupload_1_5_4.zip
