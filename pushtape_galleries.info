@@ -1,7 +1,7 @@
 name = Pushtape Galleries
 description = an attempt at creating galleries (photo and video) for pushtape_panopoly
 core = 7.x
-package = Pushtape
+package = Panopoly Apps
 php = 5.2.4
 version = 7.x-1.x-dev
 project = pushtape_galleries
@@ -16,3 +16,5 @@ dependencies[] = views
 datestamp = 1348717100
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
+project status url = project status url = http://apps.pushtape.openlearninglabs.org/content/pushtape-galleries
+apps[server] = http://apps.pushtape.openlearninglabs.org/app/query/pushtape
