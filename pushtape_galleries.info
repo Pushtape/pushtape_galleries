@@ -11,10 +11,12 @@ dependencies[] = list
 dependencies[] = media_gallery
 dependencies[] = number
 dependencies[] = plupload
+dependencies[] = strongarm
 dependencies[] = taxonomy
 dependencies[] = views
 datestamp = 1348717100
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:1
-project status url = project status url = http://apps.pushtape.openlearninglabs.org/content/pushtape-galleries
-apps[server] = http://apps.pushtape.openlearninglabs.org/app/query/pushtape
+features[variable][] = pathauto_node_media_gallery_pattern
+features[variable][] = pathauto_taxonomy_term_gallery_collections_pattern
+project status url = http://apps.pushtape.openlearninglabs.org/content/pushtape-galleries
