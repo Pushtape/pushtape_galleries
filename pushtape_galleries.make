@@ -7,8 +7,8 @@ projects[multiform][subdir] = contrib
 
 projects[media_gallery][version] =  1.x-dev
 projects[media_gallery][subdir] = contrib
-projects[media_gallery][patch][] = http://drupal.org/files/media_gallery-support_file_field-1391332-27_0.patch
-projects[media_gallery][patch][] = http://drupal.org/files/1333674-conflicts-20.patch
+;projects[media_gallery][patch][] = http://drupal.org/files/media_gallery-support_file_field-1391332-27_0.patch
+;projects[media_gallery][patch][] = http://drupal.org/files/1333674-conflicts-20.patch
 
 projects[plupload][subdir] = contrib
 
