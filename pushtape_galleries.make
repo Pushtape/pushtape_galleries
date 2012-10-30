@@ -7,6 +7,7 @@ projects[multiform][subdir] = contrib
 
 projects[media_gallery][version] =  1.x-dev
 projects[media_gallery][subdir] = contrib
+projects[media_gallery][patch][] = http://drupal.org/files/support_media_2.x-1244204-90.patch
 
 projects[plupload][subdir] = contrib
 
