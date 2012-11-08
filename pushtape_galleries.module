@@ -1,6 +1,12 @@
 <?php
 /**
  * @file
+ * Code for the Pushtape Galleries feature.
+ */
+
+include_once 'pushtape_galleries.features.inc';
+/**
+ * @file
  * Code for the pushtape_galleries feature.
  */
 
