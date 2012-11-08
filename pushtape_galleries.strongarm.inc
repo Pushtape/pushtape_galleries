@@ -49,6 +49,9 @@ function pushtape_galleries_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'media_gallery_featured' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -85,6 +88,10 @@ function pushtape_galleries_strongarm() {
             'weight' => '0',
             'visible' => TRUE,
           ),
+          'media_gallery_featured' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
         ),
       ),
     ),
@@ -118,12 +125,19 @@ function pushtape_galleries_strongarm() {
       'album_player' => array(
         'custom_settings' => FALSE,
       ),
+      'media_gallery_featured' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(),
       'display' => array(
         'file' => array(
           'media_gallery_thumbnail' => array(
+            'weight' => '0',
+            'visible' => TRUE,
+          ),
+          'media_gallery_featured' => array(
             'weight' => '0',
             'visible' => TRUE,
           ),
