@@ -155,17 +155,27 @@ function pushtape_galleries_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Content: Gallery collection (media_gallery_collection) */
+  $handler->display->display_options['relationships']['media_gallery_collection_tid']['id'] = 'media_gallery_collection_tid';
+  $handler->display->display_options['relationships']['media_gallery_collection_tid']['table'] = 'field_data_media_gallery_collection';
+  $handler->display->display_options['relationships']['media_gallery_collection_tid']['field'] = 'media_gallery_collection_tid';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['absolute'] = TRUE;
   /* Field: Content: Gallery media */
   $handler->display->display_options['fields']['media_gallery_media_1']['id'] = 'media_gallery_media_1';
   $handler->display->display_options['fields']['media_gallery_media_1']['table'] = 'field_data_media_gallery_media';
   $handler->display->display_options['fields']['media_gallery_media_1']['field'] = 'media_gallery_media';
   $handler->display->display_options['fields']['media_gallery_media_1']['label'] = '';
+  $handler->display->display_options['fields']['media_gallery_media_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['media_gallery_media_1']['alter']['text'] = '<a href="/[path]">[media_gallery_media_1]</a>';
+  $handler->display->display_options['fields']['media_gallery_media_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['media_gallery_media_1']['alter']['path'] = '[path]';
   $handler->display->display_options['fields']['media_gallery_media_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['media_gallery_media_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['media_gallery_media_1']['type'] = 'media_gallery';
